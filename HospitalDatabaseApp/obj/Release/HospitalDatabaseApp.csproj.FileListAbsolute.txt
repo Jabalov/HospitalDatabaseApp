@@ -3,10 +3,11 @@ C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\bin\Rele
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\bin\Release\HospitalDatabaseApp.pdb
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.DoctorForm.resources
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.LoginForm.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.PatientFrom.resources
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.Properties.Resources.resources
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.RegistrationForm.resources
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.csproj.GenerateResource.cache
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.csproj.CoreCompileInputs.cache
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.exe
 C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.pdb
-C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.PatientFrom.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Release\HospitalDatabaseApp.csprojAssemblyReference.cache

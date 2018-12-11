@@ -55,7 +55,27 @@ namespace HospitalDatabaseApp
             if (listBox1.SelectedIndex == -1)
                 return;
 
-            mainLabel.Text = string.Format("Patient is complaining from: {0}", complainments[listBox1.SelectedIndex]);
+            richTextBox3.Text = string.Format("About: {0}", complainments[listBox1.SelectedIndex]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Program.UpdateExcuterCommand("select patientUsername, complainment, firstName, lastName from MedicalAppointments, Users where MedicalAppointments.doctorUsername = @uname and Users.username=patientUsername");
+            Program.commandExcuter.Parameters.AddWithValue("@uname", Program.username);
+            Program.StartReader();
+
+            if (Program.reader.HasRows)
+            {
+                listBox1.Items.Clear();
+                unames = new List<string>(); complainments = new List<string>();
+
+                while (Program.reader.Read())
+                {
+                    unames.Add(Program.reader["patientUsername"].ToString());
+                    complainments.Add(Program.reader["complainment"].ToString());
+                    listBox1.Items.Add(string.Format("Mr/s: {0} {1}", Program.reader["firstName"], Program.reader["lastName"]));
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

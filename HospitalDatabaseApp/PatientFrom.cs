@@ -97,7 +97,7 @@ namespace HospitalDatabaseApp
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Program.UpdateExcuterCommand("SELECT DISTINCT specialization  FROM  Users");
             Program.StartReader();
@@ -112,15 +112,13 @@ namespace HospitalDatabaseApp
                         listBox1.Items.Add(Program.reader["specialization"].ToString());
                 }
             }
-        }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            Program.UpdateExcuterCommand("SELECT * specialization  FROM  MedicalRecords WHERE MedicalRecords.patientUsername = @uname");
+
+            Program.UpdateExcuterCommand("SELECT * FROM  MedicalRecords WHERE MedicalRecords.patientUsername = @uname");
             Program.commandExcuter.Parameters.AddWithValue("@uname", Program.username);
             Program.StartReader();
 
-            listBox1.Items.Clear();
+            listBox3.Items.Clear();
             recordTreatment = new List<string>();
             recordDiagnostic = new List<string>();
 
@@ -137,6 +135,7 @@ namespace HospitalDatabaseApp
                 }
             }
         }
+
 
         private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
