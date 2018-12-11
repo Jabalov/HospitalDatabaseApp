@@ -1,0 +1,13 @@
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\bin\Debug\HospitalDatabaseApp.exe.config
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\bin\Debug\HospitalDatabaseApp.exe
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\bin\Debug\HospitalDatabaseApp.pdb
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.csprojAssemblyReference.cache
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.Properties.Resources.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.csproj.GenerateResource.cache
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.csproj.CoreCompileInputs.cache
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.exe
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.pdb
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.LoginForm.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.DoctorForm.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.RegistrationForm.resources
+C:\Users\AbdElAziz\source\repos\HospitalDatabaseApp\HospitalDatabaseApp\obj\Debug\HospitalDatabaseApp.PatientFrom.resources
