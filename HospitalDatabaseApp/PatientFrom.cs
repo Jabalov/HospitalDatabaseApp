@@ -13,7 +13,7 @@ namespace HospitalDatabaseApp
 {
     public partial class PatientFrom : Form
     {
-        List<string> unames;
+        List<string> unames, recordDiagnostic, recordTreatment;
 
         public PatientFrom()
         {
@@ -51,6 +51,8 @@ namespace HospitalDatabaseApp
         {
             if (listBox1.SelectedIndex == -1)
                 return;
+
+            listBox2.Items.Clear();
 
             Program.UpdateExcuterCommand("SELECT username, firstName, lastName  FROM  Users WHERE Users.specialization = @spz");
             Program.commandExcuter.Parameters.AddWithValue("@spz", listBox1.SelectedItem.ToString());
@@ -92,6 +94,57 @@ namespace HospitalDatabaseApp
             {
                 MessageBox.Show("Somthing went wrong! Please try again later.");
             }
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+            Program.UpdateExcuterCommand("SELECT DISTINCT specialization  FROM  Users");
+            Program.StartReader();
+
+            listBox1.Items.Clear();
+
+            if (Program.reader.HasRows)
+            {
+                while (Program.reader.Read())
+                {
+                    if (Program.reader["specialization"].ToString() != "")
+                        listBox1.Items.Add(Program.reader["specialization"].ToString());
+                }
+            }
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+            Program.UpdateExcuterCommand("SELECT * specialization  FROM  MedicalRecords WHERE MedicalRecords.patientUsername = @uname");
+            Program.commandExcuter.Parameters.AddWithValue("@uname", Program.username);
+            Program.StartReader();
+
+            listBox1.Items.Clear();
+            recordTreatment = new List<string>();
+            recordDiagnostic = new List<string>();
+
+            if (Program.reader.HasRows)
+            {
+                while (Program.reader.Read())
+                {
+                    if (Program.reader["doctorUsername"].ToString() != "")
+                    {
+                        listBox3.Items.Add(string.Format("With Dr: {0}", Program.reader["doctorUsername"]));
+                        recordDiagnostic.Add(Program.reader["diagnostic"].ToString());
+                        recordTreatment.Add(Program.reader["treatment"].ToString());
+                    }
+                }
+            }
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox3.SelectedIndex == -1)
+                return;
+
+            richTextBox2.Text = recordDiagnostic[listBox3.SelectedIndex];
+            richTextBox3.Text = recordTreatment[listBox3.SelectedIndex];
 
         }
     }
